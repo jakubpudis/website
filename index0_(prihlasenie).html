@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+
+    <H1>Prihlásenie</H1>
+    <p>Zadajte prihlasovacie meno:</p>
+
+    <input type="text" id="username" name="username" placeholder="(menopriezvisko)">
+
+    <p>Zadajte prihlasovacie heslo:</p>
+    <input type="password" id="password" name="password" placeholder="(ddmmrrrr)">
+
+    <p><input type="submit" value="Prihlásiť sa" onclick="login()"></p>
+
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            var users = [
+                { username: "jakubpudis", password: "05042007" },
+                { username: "martinpudis", password: "07081975" },
+                { username: "renatapudisova", password: "01091980" }
+            ];
+
+            var found = users.some(function(user) {
+                return user.username === username && user.password === password;
+            });
+
+            if (found) {
+                window.location.href = "index1_(zlozky).html";
+            } else {
+                alert("Nesprávne prihlasovacie meno alebo heslo. Skúste to znova.");
+            }
+        }
+    </script>
+</body>
+</html>
