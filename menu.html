@@ -6,24 +6,69 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <form action="index.html" method="get">
-        <p><input type="submit" value="←" > Späť</p>
-    </form>
+    <div id="knoflik">
+        <form action="index.html" method="get">
+            <input type="submit" value="← Späť ">
+        </form>
+    </div>
+    <div id="menu">
 
-    <h2>Vyberte priečinok:</h2>
-    
-    <form action="ulozisko.html" method="get">
-        <p><input type="submit" value="Úložisko"></p>
-    </form>
+        <h2>Vyberte priečinok:</h2>
+        
+        <form action="ulozisko.html" method="get">
+            <input type="submit" value="Úložisko">
+        </form>
 
-    <form action="aplikacie.html" method="get">
-        <p><input type="submit" value="Aplikácie"></p>
-    </form>
-    
-    <form action="osobne subory.html" method="get">
-        <p><input type="submit" value="Osobné Súbory"></p>
-    </form>
-
+        <form action="aplikacie.html" method="get">
+            <input type="submit" value="Aplikácie">
+        </form>
+        
+        <form action="osobne subory.html" method="get">
+            <input type="submit" value="Osobné Súbory">
+        </form>
+    </div>
 </body>
+<style>
+    #knoflik {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        
+        
+    }
+    #menu {
+        transition: transform 2s ease;
+        width: 250px;
+        margin: 50px auto;
+        padding: 10px;
+        border: 2px solid #000;
+        border-radius: 5px;
+        text-align: center;
+        background-color: #f9f9f9;
+    }
+
+    #menu h2 {
+        margin-bottom: 20px;
+    }
+
+    #menu form {
+        margin: 10px 0;
+    }
+
+    #menu input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        border: thin solid #000;
+        border-radius: 5px;
+        background-color: #9ec8eb;
+        color: rgb(0, 0, 0);
+    }
+
+    #menu input[type="submit"].fx-magnet:hover {
+        transform: scale(1.1);
+        background-color: #ffffff;
+    }
+</style>
 </html> 
