@@ -33,6 +33,5 @@
 }
 
 #login-container input[type="submit"]:hover {
-    transform: scale(1.03);
-    background-color: #28ACFFFF;
+    transform: scale(1.02);
 }
