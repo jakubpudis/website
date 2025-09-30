@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="staj" href="menu.css">
 </head>
 <body>
-    <div id="knoflik">
-        <form action="index.html" method="get">
+    <div id="menu">
+        <form id="knoflik" action="index.html" method="get">
             <input type="submit" value="← Späť ">
         </form>
-    </div>
-    <div id="menu">
 
         <h1>Vyberte priečinok:</h1>
         
@@ -28,45 +27,4 @@
         </form>
     </div>
 </body>
-<style>
-    #knoflik {
-        position: absolute;
-        top: 10px;
-        left: 10px;  
-    }
-    #menu {
-        transition: transform 2s ease;
-        width: 300px;
-        margin: 100px auto;
-        padding: 15px;
-        border: 2px solid #000;
-        border-radius: 5px;
-        text-align: center;
-        background-color: #f9f9f9;
-    }
-
-    #menu h2 {
-        margin-bottom: 20px;
-    }
-
-    #menu form {
-        margin: 10px 0;
-    }
-
-    #menu input[type="submit"] {
-        width: 100%;
-        padding: 10px;
-        font-size: 16px;
-        cursor: pointer;
-        border: thin solid #000;
-        border-radius: 5px;
-        background-color: #7ec5ff;
-        color: rgb(0, 0, 0);
-    }
-
-    #menu input[type="submit"]:hover {
-        transform: scale(1.03);
-        background-color: #ffffff;
-    }
-</style>
 </html> 
