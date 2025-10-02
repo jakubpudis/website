@@ -1,36 +1,37 @@
-#menu {
+#login-container {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 300px;
     margin:  100px auto;
     padding: 20px;
     border: 2px solid #000;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
     background-color: #ffffff;
 }
-#menu h1 {
+
+#login-container h1 {
      margin-bottom: 20px;
 }
 
-#menu input[type="submit"] {
+#login-container input[type="text"],
+#login-container input[type="password"] {
+    width: 88%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+#login-container input[type="submit"] {
     width: 95%;
-    margin: 5px;
     padding: 10px;
     font-size: 16px;
     background-color: #28ACFFFF;
     color: rgb(0, 0, 0);
-    border: 2px solid #000;
-    border-radius: 3px;
+    border: 1px solid #000000;
+    border-radius: 10px;
     cursor: pointer;
 }
 
-#knoflik{
-    width: 28%;
-    padding: 3px;
-    font-size: 11px;
-    background: white;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-}
-#menu input[type="submit"]:hover {
+#login-container input[type="submit"]:hover {
     transform: scale(1.02);
 }

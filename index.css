@@ -1,9 +1,10 @@
 #login-container {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 300px;
     margin:  100px auto;
     padding: 20px;
     border: 2px solid #000;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
     background-color: #ffffff;
 }
@@ -16,9 +17,8 @@
 #login-container input[type="password"] {
     width: 88%;
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    border: 1px solid #000000;
+    border-radius: 10px;
 }
 
 #login-container input[type="submit"] {
@@ -27,8 +27,8 @@
     font-size: 16px;
     background-color: #28ACFFFF;
     color: rgb(0, 0, 0);
-    border: 2px solid #000;
-    border-radius: 3px;
+    border: 1px solid #000000;
+    border-radius: 10px;
     cursor: pointer;
 }
 
