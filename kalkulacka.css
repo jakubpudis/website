@@ -29,7 +29,7 @@
     cursor: pointer;
 }
 
-div input[type="button"]:hover {
+#buttons input[type="button"]:hover {
     transform: scale(1.02);
 }
 
