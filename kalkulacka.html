@@ -9,9 +9,9 @@
 <body>
     
     <form action="aplikacie.html" method="get">
-        <p><input type="submit" value="← Späť"></p>
+        <p><input type="submit" value="← Back"></p>
     </form>
-    <h1 id="#nadpis">Kalkulačka:</h1>
+    
     <div id="kalkulacka">
 
         <input id="display" readonly>
@@ -55,7 +55,7 @@
             const result = eval(document.getElementById('display').value);
             document.getElementById('display').value = result;
         } catch (e) {
-            document.getElementById('display').value = 'Error';
+            document.getElementById('display').value = 'Syntax Error';
         }
     }
 </script>
