@@ -45,7 +45,7 @@
 }
 
 body {
-    min-height: 100vh; /* aby pokrylo celú výšku obrazovky */
+    min-height: 100%; /* aby pokrylo celú výšku obrazovky */
     background-image: url(background.png);
     background-size: cover;
     background-repeat: no-repeat;
