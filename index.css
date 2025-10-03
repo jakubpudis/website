@@ -1,5 +1,5 @@
 #login-container {
-    min-height: webkit fill available;
+    min-height: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 300px;
     margin:  100px auto;
@@ -46,4 +46,11 @@
 body{
     background-image: url(background.png);
     background-size: cover;
+}
+body {
+    min-height: 100vh; /* aby pokrylo celú výšku obrazovky */
+    background-image: url(background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
