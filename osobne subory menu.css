@@ -3,7 +3,16 @@ h1{
     text-align: center;
 }
 
-body{
+body {
+    min-height: 100%; /* aby pokrylo celú výšku obrazovky */
     background-image: url(background.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;      /* aby sa vedelo natiahnuť podľa obsahu */
 }
