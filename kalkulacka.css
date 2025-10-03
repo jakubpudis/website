@@ -29,7 +29,7 @@
     cursor: pointer;
 }
 
-div input[type="submit"]:hover {
+div input[type="button"]:hover {
     transform: scale(1.02);
 }
 
@@ -46,4 +46,5 @@ div input[type="submit"]:hover {
 h1{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+
 }
