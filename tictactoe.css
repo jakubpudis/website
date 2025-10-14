@@ -16,3 +16,57 @@ html, body {
     padding: 0;
     min-height: 100%;      /* aby sa vedelo natiahnuť podľa obsahu */
 }
+
+:root{
+display:flex;
+align-items:center;
+justify-content:center;
+padding:2rem;
+}
+.container{
+width:100%;
+max-width:480px;
+background:rgba(255,255,255,0.03);
+padding:1.4rem;
+border-radius:12px;
+box-shadow:0 6px 30px rgba(3,6,23,0.7);
+}
+h1{margin:0 0 1rem 0;text-align:center;font-size:1.6rem}
+.game{display:grid;grid-template-columns:1fr;gap:1rem}
+.board{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:8px;
+}
+.cell{
+width:100%;
+aspect-ratio:1/1;
+background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.08));
+border-radius:8px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:2.4rem;
+cursor:pointer;
+user-select:none;
+transition:transform .08s ease, .12s ease;
+border:2px solid rgba(255,255,255,0.02);
+}
+.cell:hover{transform:translateY(-4px)}
+.cell.x{color:var(--accent);}
+.cell.o{color:var(--accent-2)}
+.status{font-size:0.95rem;text-align:center;padding:0.35rem;color:var(--muted)}
+.controls{display:flex;flex-direction:column;gap:.6rem}
+.buttons{display:flex;gap:.6rem;justify-content:center}
+.btn{
+padding:.5rem .8rem;border-radius:8px;border:0;background:rgba(255,255,255,0.04);color:inherit;cursor:pointer;font-weight:600
+}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.score{display:flex;gap:1rem;justify-content:center;color:var(--muted);font-size:.95rem}
+.hint{text-align:center;color:var(--muted);font-size:.85rem;margin-top:1rem}
+.highlight{box-shadow:0 0 0 4px rgba(154,211,188,0.08);transform:scale(1.03)}
+
+
+@media (max-width:420px){
+.cell{font-size:2rem}
+}

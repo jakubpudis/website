@@ -1,16 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="sk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="tictactoe.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="tictactoe.css">
 </head>
 <body>
-    
-<form action="aplikacie.html" method="get">
-        <p><input style="margin-left: 10px;" type="submit" value="← Back"></p>
-    </form>
-    <h1>Tic-Tac-Toe:</h1>
+  <main class="container">
+    <h1>Tic Tac Toe</h1>
+
+    <section class="game">
+      <div id="board" class="board" aria-label="Tic Tac Toe board"></div>
+
+      <div class="controls">
+        <div id="status" class="status">Hráč X začína</div>
+        <div class="buttons">
+          <button id="undoBtn" class="btn" disabled>Späť</button>
+          <button id="resetBtn" class="btn">Reset</button>
+        </div>
+      </div>
+
+      <div class="score">
+        <div>X: <span id="scoreX">0</span></div>
+        <div>O: <span id="scoreO">0</span></div>
+        <div>Remízy: <span id="scoreTie">0</span></div>
+      </div>
+    </section>
+
+    <footer class="hint">Klikni na políčko, aby si urobil ťah. Hra pre dvoch hráčov (lokálne).</footer>
+  </main>
+
+<script src="tictactoe.js"></script>
 </body>
 </html>

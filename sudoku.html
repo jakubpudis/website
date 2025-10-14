@@ -3,14 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sudoku</title>
     <link rel="stylesheet" href="sudoku.css">
 </head>
 <body>
-    
-<form action="aplikacie.html" method="get">
+
+    <form action="aplikacie.html" method="get">
         <p><input style="margin-left: 10px;" type="submit" value="← Back"></p>
     </form>
-    <h1>Sudoku:</h1>
+
+    <div id="sudoku-container">
+        <h1>Sudoku</h1>
+
+        <form id="sudokuForm" onsubmit="return false;">
+            <table id="sudokuTable" aria-label="Sudoku" role="grid"></table>
+        </form>
+
+        <div class="controls">
+            <button id="checkBtn">Overiť</button>
+            <button id="solveBtn">Riešiť</button>
+            <button id="clearBtn">Vyčistiť</button>
+            <button id="newBtn">Nová hra</button>
+        </div>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="sudoku.js"></script>
 </body>
 </html>
